@@ -1,4 +1,5 @@
 {% load static %}
+{%load post_tags %}
 <html>
 <head>
 <title>admissions report page</title>
@@ -11,16 +12,16 @@
 <br/>
 
 <div class="module">
-<h1>ADMISSIONS</h1><br/>
+<h1>ADMISSIONS :{% total_stu %}</h1><br/>
 <a href="./ad/newadm"><button type="button" name="button">Add Admissions</button></a><br/><br/>
 <a href="./ad/admreport"><button type="button" name="button">Admission Report</button></a><br/><br/>
 </div> 
 
 <div class="module">
 <h1>FINANCE</h1><br/>
-<a href="./fin/feecoll"><button type="button" name="button">Fee Collection</button></a><br/><br/>
-<a href="./fin/collectionreport"><button type="button" name="button">Fee Collection Report</button><br/></a><br/>
-<a href="./fin/duesreport"><button type="button" name="button">Fee Dues Report</button></a><br/><br/>
+<a href="/fin/feecoll"><button type="button" name="button">Fee Collection</button></a><br/><br/>
+<a href="/fin/collectionreport"><button type="button" name="button">Fee Collection Report</button><br/></a><br/>
+<a href="/fin/duesreport"><button type="button" name="button">Fee Dues Report</button></a><br/><br/>
 </div>  
 </body>   
 </html>

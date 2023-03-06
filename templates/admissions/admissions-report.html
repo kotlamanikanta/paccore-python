@@ -10,6 +10,7 @@
                   <th> Father Name</th>
                   <th> Class</th>
                   <th> Contact</th>
+                  <th>Actions</th>
             </tr>
             
 
@@ -19,7 +20,10 @@
             <td>{{s.fathername}}</td>
             <td>{{s.classname}}</td>
             <td>{{s.contact}}</td>
-                  
+            <td>
+                  <a href="/ad/update/{{s.id}}">update</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="/ad/delete/{{s.id}}">delete</a>
+            </td>                  
             </tr>
       
       {% endfor %}
