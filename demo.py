@@ -1,7 +1,7 @@
 import requests
 p={"value":"mani","valu2":"kotla"}
-res=requests.get("http://worldtimeapi.org/api/timezone/Asia/Kolkata", params=p)
-print(res.url)
+res=requests.get("http://worldtimeapi.org/api/timezone/Asia/Kolkata", data=p)
+print(res.text)
 
 
 
