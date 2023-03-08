@@ -15,7 +15,10 @@ def addAdmission(request):
     form = StudentModelForm
     studentform={'form':form,"errors":None}
     errors=None
+    print("hello")
+    print(request.GET)
     if request.method=='POST':
+        print(request.POST)
         form = StudentModelForm(request.POST)
         print(form.is_valid())
         print(form.errors)
